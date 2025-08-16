@@ -3,7 +3,8 @@ const gameCalculations = {
     csgo: (sensitivity) => sensitivity * 251,           // Counter Strike
     apex: (sensitivity) => sensitivity * 251,           // Apex
     valorant: (sensitivity) => sensitivity * 800,       // Valorant
-    strinova: (sensitivity) => sensitivity * 159        // Strinova
+    strinova: (sensitivity) => sensitivity * 159,       // Strinova
+    overwatch2: (sensitivity) => sensitivity * 75.33424283765348  // Overwatch 2
 };
 
 // 게임별 이름
@@ -11,7 +12,8 @@ const gameNames = {
     csgo: "Counter Strike",
     apex: "Apex",
     valorant: "Valorant",
-    strinova: "Strinova"
+    strinova: "Strinova",
+    overwatch2: "Overwatch 2"
 };
 
 // DOM 요소들
