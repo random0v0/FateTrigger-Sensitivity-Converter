@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FateTrigger Sensitivity Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>FateTrigger Sensitivity Converter</h1>
+            <p>게임을 선택하고 감도를 입력하면 해당 게임의 계산식으로 결과를 보여줍니다</p>
+        </header>
+
+        <main>
+            <div class="converter-section">
+                <div class="input-group">
+                    <label for="sourceGame">게임 선택:</label>
+                    <select id="sourceGame">
+                        <option value="csgo">Counter Strike</option>
+                        <option value="apex">Apex</option>
+                        <option value="valorant">Valorant</option>
+                        <option value="strinova">Strinova</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="sourceSensitivity">감도 입력:</label>
+                    <input type="number" id="sourceSensitivity" step="0.01" placeholder="예: 2.5">
+                </div>
+
+                <button id="convertBtn" class="convert-btn">계산하기</button>
+            </div>
+
+            <div class="result-section" id="resultSection" style="display: none;">
+                <h3>계산 결과</h3>
+                <div class="result-card">
+                    <div class="result-item">
+                        <span class="label">기본 감도:</span>
+                        <span class="value" id="baseSensitivity">-</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="label">아이언 사이트:</span>
+                        <span class="value" id="ironSight">-</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="label">1배율:</span>
+                        <span class="value" id="scope1x">-</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="label">2배율:</span>
+                        <span class="value" id="scope2x">-</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="label">3배율:</span>
+                        <span class="value" id="scope3x">-</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="label">4배율:</span>
+                        <span class="value" id="scope4x">-</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="label">8배율:</span>
+                        <span class="value" id="scope8x">-</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="label">10배율:</span>
+                        <span class="value" id="scope10x">-</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Made by Khalid</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
